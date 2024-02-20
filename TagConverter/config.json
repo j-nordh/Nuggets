@@ -1,0 +1,6 @@
+{
+    "oldTagsPath": "oldTags.sql",
+    "oldTagValuesPath": "oldTags.sql",
+    "newTagsPath": "newTags.sql",
+    "WeatherTags": ["t", "lcc_mean", "mcc_mean", "hcc_mean", "tcc_mean", "pmean", "ws", "Wsymb2"]
+}

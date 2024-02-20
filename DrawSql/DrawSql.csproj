@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CLAP-DotNetCore" Version="4.6.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
+		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+		<ProjectReference Include="..\ScriptOMatic.Generate\ScriptOMatic.Generate.csproj" />
+		<ProjectReference Include="..\SourceFuLib\SourceFuLib.csproj" />
+		<ProjectReference Include="..\SupplyChain.Dto\SupplyChain.Dto.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="footprints.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

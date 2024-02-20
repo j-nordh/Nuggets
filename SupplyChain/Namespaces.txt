@@ -1,0 +1,9 @@
+Recs.Dto|Servers\Recs\Recs.Server\bin\Recs.Dto.dll
+  User
+  Group
+  Permission
+  LoginResult
+  ObjectType
+  Model
+  Unit
+  Method

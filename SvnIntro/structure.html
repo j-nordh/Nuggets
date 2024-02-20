@@ -1,0 +1,55 @@
+<div class="step active">
+	<h2>Struktur</h2>
+    Generellt kan vi dela upp mjukvara på mätteknik (som man ser det från källkodshanteringens synvinkel) i följande kategorier
+	<ul>
+		<li>Projekt</li>
+		<li>"Nuggets"</li>
+		<li>Delade bibliotek av funktionalitet</li>
+		<li>Filer i personliga hemkataloger</li>
+	</ul>
+	Mer om detta i följande steg!
+</div>
+<div class="step">
+<h2>Struktur: Projekt</h2>
+    Uppfyller förmodligen minst ett av följande: 
+	<ul>
+		<li>Flera personer är/borde vara involverade i utvecklinggen</li>
+		<li>Är "Stort" som i mycket kod/många komponenter</li>
+		<li>Såld produkt</li>
+		<li>Behöver en stringent versionshantering</li>
+		<li>Utvecklaren tycker att det är ett projekt</li>
+	</ul>
+	Dessa mjukvaror ligger i var sin katalog i roten för källkodsträdet. I denna katalog skall följande finnas:
+	<ul>
+		<li>Katalogen trunk -  här görs normalt sett all utveckling</li>
+		<li>Katalogen branches - sparas specifika version undan</li>
+		<li>Filen about.json - innehåller information om projektet</li>
+	</ul>
+	Ett exempel på about.json finns nedan.
+	<pre>{
+	"about": "ESPlexer är ett ESP32/Arduino-baserat projekt för att 
+		  tillhandahålla multiplexing- och flanktidtagningssystem för 
+		  använding i flödesmätning.",
+	"owners": ["MTi"],
+	"responsible": "Johannes Nordh",
+	"contributors": ["Kent Lindström"]
+}</pre>
+	Detta format är inte helt bestämt ännu men tanken är att det för varje projekt skall finnas grundläggande information om programvaran.
+</div>
+<div class="step">
+    <h2>Struktur: Nuggets</h2>
+	Är mjukvara som inte riktigt lever upp till kraven för ett projekt, eller som inte <i>känns</i> som ett helt projekt, men som ändå kan tänkas ha ett värde för andra eller eftervärlden. Guldklimpar, helt enkelt... <br>
+	Dessa mjukvaror lägger vi i katalogen "Nuggets". (Här finns även en .Net Solution-fil för nuggets som med fördel kan användas om man utvecklar i .Net. Liknande filer för andra programspråk skapas efter behov...)
+</div>
+<div class="step">
+    <h2>Struktur: Delade bibliotek</h2>
+	Delad kod är bra, dela mera.<br>
+	Våra mjukvaror använder mer och mer delad funktionalitet och en fungerande struktur för att hantera delad kod är en av drivkrafterna bakom källkodshanteringsprojektet.<br/>
+	
+	För att få lite styrsel på det är dessa dessutom uppdelade i två underkategorier:
+	<ul>
+		<li>Egentillverkade bibliotek: Dessa lägger vi i katalogen "Shared", här ligger, i skrivande stund, lite bra-å-ha kod för .Net-utveckling</li>
+		<li>Bra grejor nedtankade från nätet: Dessa lägger vi i katalogen "lib", det gäller såväl kompilerade filer (dll/.o/whatever) som källkod.</li>
+	</ul>
+	<b>Detta gäller dock inte mjukvara som hanteras genom pakethanteringssystem i utvecklingsmiljöerna (t.ex pip eller nuget)!!!</b><br>Dessa hanteras genom just dessa pakethanteringssystem.
+</div>

@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name "V_adc_dac")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_adc_dac.lib")(options "")(descr ""))
+  (lib (name "V_Battery")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Battery.lib")(options "")(descr ""))
+  (lib (name "V_Connector")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Connector.lib")(options "")(descr ""))
+  (lib (name "V_Diode")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Diode.lib")(options "")(descr ""))
+  (lib (name "V_Linear")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Linear.lib")(options "")(descr ""))
+  (lib (name "V_Logic")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Logic.lib")(options "")(descr ""))
+  (lib (name "V_Microcontroller")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Microcontroller.lib")(options "")(descr ""))
+  (lib (name "V_Passive")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Passive.lib")(options "")(descr ""))
+  (lib (name "V_Regulator")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Regulator.lib")(options "")(descr ""))
+  (lib (name "V_Relay")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Relay.lib")(options "")(descr ""))
+  (lib (name "V_Transistor")(type "Legacy")(uri "C:/Program Files (x86)/VeeCAD/Library/Kicad/V_Transistor.lib")(options "")(descr ""))
+)

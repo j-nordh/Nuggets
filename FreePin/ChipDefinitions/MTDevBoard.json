@@ -1,0 +1,86 @@
+{
+"pins":{
+	"GPIO0": {"in": "pulled up", "out": "OK", "Comment": "outputs PWM signal at boot"},
+	"GPIO1": {"in": "TX pin", "out": "OK", "Comment": "debug output at boot"},
+	"GPIO2": {"in": "OK", "out": "OK", "Comment": "connected to on-board LED"},
+	"GPIO3": {"in": "OK", "out": "RX pin", "Comment": "HIGH at boot"},
+	"GPIO4": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO5": {"in": "OK", "out": "OK", "Comment": "outputs PWM signal at boot"},
+	"GPIO6": {"in": "x", "out": "x", "Comment": "connected to the integrated SPI flash"},
+	"GPIO7": {"in": "x", "out": "x", "Comment": "connected to the integrated SPI flash"},
+	"GPIO8": {"in": "x", "out": "x", "Comment": "connected to the integrated SPI flash"},
+	"GPIO9": {"in": "x", "out": "x", "Comment": "connected to the integrated SPI flash"},
+	"GPIO10": {"in": "x", "out": "x", "Comment": "connected to the integrated SPI flash"},
+	"GPIO11": {"in": "x", "out": "x", "Comment": "connected to the integrated SPI flash"},
+	"GPIO12": {"in": "OK", "out": "OK", "Comment": "boot fail if pulled high"},
+	"GPIO13": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO14": {"in": "OK", "out": "OK", "Comment": "outputs PWM signal at boot"},
+	"GPIO15": {"in": "OK", "out": "OK", "Comment": "outputs PWM signal at boot"},
+	"GPIO16": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO17": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO18": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO19": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO21": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO22": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO23": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO25": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO26": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO27": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO32": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPIO33": {"in": "OK", "out": "OK", "Comment": ""},
+	"GPI34": {"in": "OK", "out": "", "Comment": "input only"},
+	"GPI35": {"in": "OK", "out": "", "Comment": "input only"},
+	"GPI36": {"in": "OK", "out": "", "Comment": "input only"},
+	"GPI39": {"in": "OK", "out": "", "Comment": "input only"},
+},
+	"functions": [
+		{
+			"name": "SPI flash",
+			"pins": ["GPIO6","GPIO7","GPIO8","GPIO9","GPIO10","GPIO11" ]
+		},
+		{
+			"name": "Relays",
+			"pins": ["GPIO32","GPIO33" ]
+		},
+    {
+      "name": "U0",
+      "pins": ["GPIO1","GPIO3" ]
+    },
+    {
+      "name": "PWR & BAT",
+      "pins": ["GPIO34","GPIO39" ]
+    },
+    {
+      "name": "USB Serial",
+      "pins": ["GPIO0","GPIO1","GPIO2","GPIO3" ]
+    },
+    {
+      "name": "Buttons",
+      "pins": ["GPIO34","GPIO35" ]
+    }
+	],
+	"header": [
+    [ "GPIO0", "GPIO1" ],
+		[ "GPIO2", "GPIO3" ],
+		[ "GPIO4", "GPIO5" ],
+		[ "GPIO6", "GPIO7" ],
+		[ "GPIO8", "GPIO9" ],
+		[ "GPIO10", "GPIO11" ],
+		[ "GPIO12", "GPIO13" ],
+		[ "GPIO14", "GPIO15" ],
+		[ "GPIO16", "GPIO17" ],
+		[ "GPIO18", "GPIO19" ],
+		[ "GPIO21", "GPIO22" ],
+		[ "GPIO23", "GPIO25" ],
+		[ "GPIO26", "GPIO27" ],
+		[ "GPIO32", "GPIO33" ],
+		[ "GPIO29", "GPIO30" ],
+    [ "GPIO32", "GPIO33" ],
+		[ "GPI34", "GPI35" ],
+		[ "GPI36", "GPI39" ],
+    [ "EN", "5V" ],
+		[ "3V3", "5V" ],
+		[ "3V3", "3V3" ],
+    [ "GND", "GND" ]
+	]
+}

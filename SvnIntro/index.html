@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mättekniks lilla SVN-skola</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+var index, stepsCount, prevBtn, nextBtn;
+var menu = {"welcome":"Start", 
+			"intro":"Introduktion om SVN",
+			"install":"Installera TortoiseSVN",
+			"initWorkDir":"Initiera din arbetskatalog",
+			"commit":"Commit-dialogen",
+			"structure":"Struktur"};
+
+function initButtons()
+{
+	index = $(".step.active").index(".step");
+    stepsCount = $(".step").length;
+    prevBtn = $("#prev");
+    nextBtn = $("#next");
+	if(stepsCount==0)
+	{
+		$(".buttonWrapper").hide();
+	}
+	else
+	{
+		$(".buttonWrapper").show();
+		prevBtn.hide();
+		nextBtn.show();
+	}
+}
+
+function initMenu()
+{
+	var html="";
+	$.each(menu, function(k,desc)
+	{
+		html +='\n\t<li><a href="#" id="btn' + k +'">'+desc + '</a></li>';
+	});
+	$("#menu").html(html);
+	
+	$.each(menu, function(k,desc)
+	{
+		$("#btn"+k).click(function()
+		{
+			loadContent(k+".html");
+			return false;
+		});
+	});
+}
+function loadContent(url)
+{
+	$("#content")
+		.load(url+"?"+ (new Date()).getTime()
+		,function(){initButtons();});
+	
+}
+
+$(function(){
+	initButtons();
+
+	prevBtn.click(function() {
+		nextBtn.show();
+
+		if (index > 0) {
+			index--;
+			$(".step").removeClass("active").eq(index).addClass("active");
+		};
+
+		if (index === 0) {
+			$(this).hide();
+		}
+	});
+
+	nextBtn.click(function() {
+		prevBtn.show();
+
+		if (index < stepsCount - 1) {
+			index++;
+			$(".step").removeClass("active").eq(index).addClass("active");
+		};
+
+		if (index === stepsCount - 1) {
+			$(this).hide();
+		}
+	});
+	if(!$("#menu").html().length<10)
+	{
+		initMenu();
+		loadContent("welcome.html");
+		started=true;
+	}
+});
+</script>
+</head>
+<body>
+<div class="menu boxed">
+	<h3>Innehåll</h3>
+	<ul id="menu">
+		
+	</ul>
+</div>
+<div id="contentWrapper" class="boxed">
+	<div id="content"></div>
+	<div class="buttonWrapper">
+	<div style="float:left">
+		<button id="prev">Föregående</button>
+	</div>
+	<div style="float:right">
+		<button id="next">Nästa</button>
+	</div>
+	</div>
+	
+</div>
+<script src="js/lightbox.min.js"></script>
+</body>
+</html>

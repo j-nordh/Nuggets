@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SupplyChain": {
+      "commandName": "Project",
+      "commandLineArgs": "all /macs"
+    }
+  }
+}

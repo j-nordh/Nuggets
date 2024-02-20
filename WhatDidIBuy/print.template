@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Things to buy</title>
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/styles.css">
+    <meta charset="utf-8>">
+</head>
+<body>
+<table id="myTable">
+%ROWS%
+</table>
+</html>

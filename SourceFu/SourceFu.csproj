@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SwaggerClassTemplate.txt" />
+    <None Remove="SwaggerFileTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SwaggerClassTemplate.txt" />
+    <EmbeddedResource Include="SwaggerFileTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CLAP-DotNetCore" Version="4.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj" />
+    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+    <ProjectReference Include="..\SourceFuLib\SourceFuLib.csproj" />
+    <ProjectReference Include="..\SupplyChain.Dto\SupplyChain.Dto.csproj" />
+  </ItemGroup>
+
+</Project>

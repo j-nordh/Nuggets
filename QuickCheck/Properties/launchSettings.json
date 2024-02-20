@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuickCheck": {
+      "commandName": "Project",
+      "commandLineArgs": "BitArray"
+    }
+  }
+}

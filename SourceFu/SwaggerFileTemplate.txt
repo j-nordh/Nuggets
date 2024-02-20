@@ -1,0 +1,12 @@
+﻿%includes%
+public class %name%
+{
+    private readonly RestClient _client;
+
+    public %name%(RestClient client)
+    {
+        _client = client;
+    }
+    %props%
+}
+%children%

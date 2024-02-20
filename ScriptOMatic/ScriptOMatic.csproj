@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46502A1B-FBE2-4667-8293-B35D548E6A15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScriptOMatic</RootNamespace>
+    <AssemblyName>ScriptOMatic</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ScriptOMatic.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AggregateEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AggregateEditor.Designer.cs">
+      <DependentUpon>AggregateEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArgParser.cs" />
+    <Compile Include="AttributeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeEditor.Designer.cs">
+      <DependentUpon>AttributeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CallCompare.Designer.cs">
+      <DependentUpon>CallCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbLoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbLoaderForm.Designer.cs">
+      <DependentUpon>DbLoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formatter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formatter.Designer.cs">
+      <DependentUpon>Formatter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JoinBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoinBuilderForm.Designer.cs">
+      <DependentUpon>JoinBuilderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JsonFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JsonFieldForm.Designer.cs">
+      <DependentUpon>JsonFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NestedTables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NestedTables.Designer.cs">
+      <DependentUpon>NestedTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AggregateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\AggregateForm.Designer.cs">
+      <DependentUpon>AggregateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CrudSPPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\CrudSPPage.Designer.cs">
+      <DependentUpon>CrudSPPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudStudio.Designer.cs">
+      <DependentUpon>CrudStudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FieldModeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FieldModeSelector.Designer.cs">
+      <DependentUpon>FieldModeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generator.Designer.cs">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorChildProps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneratorChildProps.Designer.cs">
+      <DependentUpon>GeneratorChildProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabeledTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabeledTextbox.Designer.cs">
+      <DependentUpon>LabeledTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launcher.Designer.cs">
+      <DependentUpon>Launcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GeneratorPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\GeneratorPage.Designer.cs" />
+    <Compile Include="Pages\TableSelectPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\TableSelectPage.Designer.cs">
+      <DependentUpon>TableSelectPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadForMaxEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadForMaxEdit.Designer.cs">
+      <DependentUpon>ReadForMaxEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcDefEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcDefEditor.Designer.cs">
+      <DependentUpon>ProcDefEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubQueryBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubQueryBuilderForm.Designer.cs">
+      <DependentUpon>SubQueryBuilderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="AggregateEditor.resx">
+      <DependentUpon>AggregateEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeEditor.resx">
+      <DependentUpon>AttributeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallCompare.resx">
+      <DependentUpon>CallCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbLoaderForm.resx">
+      <DependentUpon>DbLoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formatter.resx">
+      <DependentUpon>Formatter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JsonFieldForm.resx">
+      <DependentUpon>JsonFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NestedTables.resx">
+      <DependentUpon>NestedTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AggregateForm.resx">
+      <DependentUpon>AggregateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CrudSPPage.resx">
+      <DependentUpon>CrudSPPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudStudio.resx">
+      <DependentUpon>CrudStudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FieldModeSelector.resx">
+      <DependentUpon>FieldModeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator.resx">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratorChildProps.resx">
+      <DependentUpon>GeneratorChildProps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabeledTextbox.resx">
+      <DependentUpon>LabeledTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launcher.resx">
+      <DependentUpon>Launcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\GeneratorPage.resx" />
+    <EmbeddedResource Include="Pages\TableSelectPage.resx">
+      <DependentUpon>TableSelectPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcDefEditor.resx">
+      <DependentUpon>ProcDefEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReadForMaxEdit.resx">
+      <DependentUpon>ReadForMaxEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubQueryBuilderForm.resx">
+      <DependentUpon>SubQueryBuilderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\GeneratorDbSettings.datasource" />
+    <None Include="Properties\DataSources\GeneratorDtoSettings.datasource" />
+    <None Include="Properties\DataSources\GeneratorSettings.datasource" />
+    <None Include="Properties\DataSources\ProjectSettings.datasource" />
+    <None Include="Properties\DataSources\ScriptOMatic.Generate.Aggregate.datasource" />
+    <None Include="Properties\DataSources\ScriptOMatic.Pages.ColumnProperties.datasource" />
+    <None Include="Properties\DataSources\SupplyChain.Dto.TableInfo.datasource" />
+    <None Include="Properties\DataSources\TableNode.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nuclear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Generator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Compare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Common.Interfaces\Common.Interfaces.csproj">
+      <Project>{b0a29d20-587d-45ef-aafd-d3134c16d8bd}</Project>
+      <Name>Common.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj">
+      <Project>{187c77b9-5d6a-4d46-a52a-90afc570ff49}</Project>
+      <Name>UtilClasses.CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj">
+      <Project>{5579d515-128c-4a7a-915a-12062b57f5c3}</Project>
+      <Name>UtilClasses.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj">
+      <Project>{f33180d9-8271-487f-b2eb-1fd8230a7529}</Project>
+      <Name>UtilClasses.Winforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+      <Project>{3bba3150-e309-4a51-81f9-42b8f4f99a6b}</Project>
+      <Name>UtilClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScriptOMatic.Generate\ScriptOMatic.Generate.csproj">
+      <Project>{c8c8573d-906d-4214-87a4-0d13b091ce7f}</Project>
+      <Name>ScriptOMatic.Generate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SourceFuLib\SourceFuLib.csproj">
+      <Project>{819814ab-39cc-4d97-9830-4783ec85990b}</Project>
+      <Name>SourceFuLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLInjector\SQLInjector.csproj">
+      <Project>{bbc83cbb-8e89-4885-a58a-13867a29ea51}</Project>
+      <Name>SQLInjector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SupplyChain.Constants\SupplyChain.Constants.csproj">
+      <Project>{1ac1efb8-eba8-4a2b-9b68-86e80f10cf39}</Project>
+      <Name>SupplyChain.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SupplyChain.Dto.Extensions\SupplyChain.Dto.Extensions.csproj">
+      <Project>{6e583845-3560-4e20-b0d0-c2b92b6515e2}</Project>
+      <Name>SupplyChain.Dto.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SupplyChain.Dto\SupplyChain.Dto.csproj">
+      <Project>{86341a1c-580b-46e0-b408-c56594199aa5}</Project>
+      <Name>SupplyChain.Dto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,47 @@
+{
+  "profiles": {
+    "BomHelper": {
+      "commandName": "Project",
+      "commandLineArgs": "check /deck=c:\\source\\Flow\\MACS\\Pcb\\deck.json /cardname=CounterControl /bomPath=\"C:\\source\\Flow\\MACS\\Pcb\\CounterControl\\CounterControl.xml\""
+    },
+    "ParseAvailable": {
+      "commandName": "Project",
+      "commandLineArgs": "ParseAvailable /uri=\"https://www.digikey.se/en/products/detail/yageo/RC0805FR-074K7L/727929\""
+    },
+    "UpdateComponents": {
+      "commandName": "Project",
+      "commandLineArgs": "UpdateComponents /deck=\"c:\\source\\Flow\\MACS\\Pcb\\deck.json\" /force=true"
+    },
+    "Table": {
+      "commandName": "Project",
+      "commandLineArgs": "table /deck=c:\\source\\Flow\\MACS\\Pcb\\deck.json /order=cost"
+    },
+    "Help": {
+      "commandName": "Project"
+    },
+    "UpdateCards": {
+      "commandName": "Project",
+      "commandLineArgs": "UpdateCards /path=c:\\source\\Flow\\MACS\\Pcb\\deck.json"
+    },
+    "Check": {
+      "commandName": "Project",
+      "commandLineArgs": "check /deck=c:\\source\\Flow\\MACS\\Pcb\\deck.json /purge"
+    },
+    "CSV": {
+      "commandName": "Project",
+      "commandLineArgs": "csv /deck=c:\\source\\Flow\\MACS\\Pcb\\deck.json /fab=true"
+    },
+    "UpdateFootprints": {
+      "commandName": "Project",
+      "commandLineArgs": "updateFootprints /deck=c:\\source\\Flow\\MACS\\Pcb\\deck.json /listUntranslated"
+    },
+    "Build": {
+      "commandName": "Project",
+      "commandLineArgs": "Build /deck=c:\\source\\Flow\\MACS\\Pcb\\deck.json /outDir=c:\\Temp\\MACS\\"
+    },
+    "UpdateDigiKeyTokens": {
+      "commandName": "Project",
+      "commandLineArgs": "UpdateDigiKeyTokens"
+    }
+  }
+}

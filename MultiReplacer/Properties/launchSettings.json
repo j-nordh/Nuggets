@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MultiReplacer": {
+      "commandName": "Project",
+      "commandLineArgs": "run /in=\"C:\\Source\\Flow\\MACS\\MACS.Pcb\\AnalogControl\\AnalogControl.kicad_sch\" /rep=\"c:\\temp\\replacements.txt\" /usetemp /outpath=\"c:\\temp\\replacementRes.txt\" /regex"
+    }
+  }
+}
