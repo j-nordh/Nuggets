@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SupplyChain.Dto.Extensions</RootNamespace>
     <AssemblyName>SupplyChain.Dto.Extensions</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -54,7 +54,15 @@
       <Project>{82F16AE9-74FD-4B43-99F7-F232EDC8768A}</Project>
       <Name>Common.Dto</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+    <ProjectReference Include="..\..\Utilclasses\UtilClasses.Dto\UtilClasses.Dto.csproj">
+      <Project>{6f7389d2-0437-4bd1-be3c-fdfce7b4d117}</Project>
+      <Name>UtilClasses.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilclasses\UtilClasses.Interfaces\UtilClasses.Interfaces.csproj">
+      <Project>{37E1B544-0B86-4325-8D53-9CA514161CD2}</Project>
+      <Name>UtilClasses.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
       <Project>{3BBA3150-E309-4A51-81F9-42B8F4F99A6B}</Project>
       <Name>UtilClasses</Name>
     </ProjectReference>

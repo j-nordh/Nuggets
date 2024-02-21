@@ -66,7 +66,6 @@ namespace ScriptOMatic.Generate
             {_bundle.Dto.DecimalPlaces!= null, "UtilClasses.Extensions.Decimals" },
             {_bundle.MatchColumns?.Any() ?? false, "UtilClasses.Extensions.Strings"},
             {_bundle.MatchColumns?.Any() ?? false,"UtilClasses"},
-            "Common.Interfaces",
             //{_bundle.EnumFields.Any(), "Newtonsoft.Json"},
             //{_bundle.EnumFields.Any(), "Newtonsoft.Json.Converters"}
         }.NotNull());
@@ -195,7 +194,7 @@ namespace ScriptOMatic.Generate
         public static IEnumerable<string> Using(this DtoInfo i) => new List<string>()
         {
             "System",
-            (i.HasWriteId || i.Stateful || i.Cloneable, "Common.Interfaces"),
+            //(i.HasWriteId || i.Stateful || i.Cloneable, "Common.Interfaces"),
             (i.Stateful, new[]{"System.Runtime.Serialization", "Newtonsoft.Json" }),
         }.Union(i.Implements.Select(id => id.Namespace));
     }

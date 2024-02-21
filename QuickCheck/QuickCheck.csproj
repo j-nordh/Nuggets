@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj" />
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj" />
   </ItemGroup>
 
 </Project>

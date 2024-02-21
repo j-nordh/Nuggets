@@ -85,11 +85,11 @@
     <EmbeddedResource Include="decoder.py" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj">
       <Project>{F33180D9-8271-487F-B2EB-1FD8230A7529}</Project>
       <Name>UtilClasses.Winforms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
       <Name>UtilClasses</Name>
     </ProjectReference>
   </ItemGroup>

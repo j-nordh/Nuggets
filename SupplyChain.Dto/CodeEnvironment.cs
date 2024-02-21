@@ -1,10 +1,10 @@
-﻿using Common.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UtilClasses;
 using UtilClasses.Extensions.Reflections;
+using UtilClasses.Interfaces;
 
 namespace SupplyChain.Dto
 {

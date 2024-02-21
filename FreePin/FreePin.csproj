@@ -96,12 +96,12 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj">
       <Project>{f33180d9-8271-487f-b2eb-1fd8230a7529}</Project>
       <Name>UtilClasses.Winforms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
-      <Project>{1db7d2b0-534e-43ea-afe8-5d12287676c0}</Project>
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
+      <Project>{3bba3150-e309-4a51-81f9-42b8f4f99a6b}</Project>
       <Name>UtilClasses</Name>
     </ProjectReference>
   </ItemGroup>

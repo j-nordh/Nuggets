@@ -12,8 +12,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
-		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+		<ProjectReference Include="..\..\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
+		<ProjectReference Include="..\..\Utilclasses\UtilClasses.Dto\UtilClasses.Dto.csproj" />
+		<ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj" />
 		<ProjectReference Include="..\ScriptOMatic.Generate\ScriptOMatic.Generate.csproj" />
 		<ProjectReference Include="..\SourceFuLib\SourceFuLib.csproj" />
 		<ProjectReference Include="..\SupplyChain.Dto\SupplyChain.Dto.csproj" />

@@ -5,14 +5,13 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using Common.Dto;
 using Newtonsoft.Json;
 using SharpSvn;
 using UtilClasses.Extensions.Strings;
-using UtilClasses.Logging;
 using UtilClasses.WebClient;
 using UtilClasses.Extensions.Exceptions;
 using UtilClasses.Extensions.Integers;
+using UtilClasses.Cli;
 
 namespace CaptainHook
 {
@@ -48,12 +47,11 @@ namespace CaptainHook
         }
         string _exeDir;
         private readonly HookConfig _cfg;
-        ISimpleLogger _logger;
-        Program(string exeDir, HookConfig cfg, ISimpleLogger logger)
+        private ConsoleWriter _wr = new ConsoleWriter();
+        Program(string exeDir, HookConfig cfg)
         {
             _exeDir = exeDir;
             _cfg = cfg;
-            _logger = logger;
 
         }
 
@@ -61,7 +59,7 @@ namespace CaptainHook
         {
             if (args.Count() < 2)
             {
-                _logger.Error($"Expected at least 2 command line parameters, found {args.Count()}");
+                _wr.Error($"Expected at least 2 command line parameters, found {args.Count()}");
                 return;
             }
             var path = args[0];
@@ -88,7 +86,7 @@ namespace CaptainHook
             var lis = logItemCol.ToList();
             if (lis.Count != 0)
             {
-                _logger.Error($"Expected 1 LogItem, found{lis.Count}");
+                _wr.Error($"Expected 1 LogItem, found{lis.Count}");
                 return;
             }
 
@@ -96,7 +94,7 @@ namespace CaptainHook
             msg.Author = li.Author;
             msg.LogMessage = li.LogMessage;
             var res = new HttpCom(_cfg.HookUri).WithBody(msg).Post().GetAwaiter().GetResult();
-            _logger.Debug($"Done! Result:\r\n{res}");
+            _wr.WriteLine($"Done! Result:\r\n{res}");
         }
         static void Main(string[] args)
         {
@@ -105,22 +103,17 @@ namespace CaptainHook
             var exeDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
 
             var cfg = JsonConvert.DeserializeObject<HookConfig>(File.ReadAllText(Path.Combine(exeDir, "Config.json"), Encoding.UTF8));
-            var logger = new SimpleLogHandler()
-                .WithTypes(LogTypes.Everything)
-                .AddLogger(new SimpleFileLogger(File.Exists(cfg.LogDir) ? cfg.LogDir : exeDir, "CaptainHook", LogTypes.Everything))
-                .AddLogger(new SimpleConsoleLogger());
-
-            logger.Message("Started with command line: " + Environment.CommandLine);
+            var wr = new ConsoleWriter();
+            wr.WriteLine("Started with command line: " + Environment.CommandLine);
             try
             {
-                var prog = new Program(exeDir, cfg, logger);
+                var prog = new Program(exeDir, cfg);
                 prog.Run(args);
             }
             catch (Exception e)
             {
-                logger.Error(e);
+                wr.Error(e);
             }
-            logger.Dispose();
 
             if (Debugger.IsAttached)
             {

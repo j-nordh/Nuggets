@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj" />
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj" />
     <ProjectReference Include="..\SupplyChain.Dto.Extensions\SupplyChain.Dto.Extensions.csproj" />
     <ProjectReference Include="..\SupplyChain.Dto\SupplyChain.Dto.csproj" />
   </ItemGroup>

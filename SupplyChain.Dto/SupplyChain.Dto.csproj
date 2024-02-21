@@ -10,7 +10,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Common.Interfaces\Common.Interfaces.csproj" />
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+    <ProjectReference Include="..\..\Utilclasses\UtilClasses.Interfaces\UtilClasses.Interfaces.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
-﻿using ApiClient.Models;
-using ApiClient.OAuth2;
+﻿//using ApiClient.Models;
+//using ApiClient.OAuth2;
 using BomHelper.Dto;
 using BomHelper.Farnell;
 using BomHelper.KiCad;
@@ -313,19 +313,19 @@ namespace BomHelper
 
             }
         }
-        [Verb(Description = "Updates the tokens for the DigiKey API.")]
-        public async Task UpdateDigiKeyTokens()
-        {
-            var settings = ApiClientSettings.CreateFromConfigFile();
-            var svc = new OAuth2Service(settings);
-            Console.WriteLine("Please paste the following URL in a browser:");
-            Console.WriteLine(svc.GenerateAuthUrl());
-            Console.Write("Please paste code (extracted from the url in the callback) here: ");
-            var code = Console.ReadLine().Trim();
-            var token = await svc.FinishAuthorization(code);
-            svc.ClientSettings.UpdateAndSave(token);
-            Console.WriteLine("Done!");
-        }
+        //[Verb(Description = "Updates the tokens for the DigiKey API.")]
+        //public async Task UpdateDigiKeyTokens()
+        //{
+        //    var settings = ApiClientSettings.CreateFromConfigFile();
+        //    var svc = new OAuth2Service(settings);
+        //    Console.WriteLine("Please paste the following URL in a browser:");
+        //    Console.WriteLine(svc.GenerateAuthUrl());
+        //    Console.Write("Please paste code (extracted from the url in the callback) here: ");
+        //    var code = Console.ReadLine().Trim();
+        //    var token = await svc.FinishAuthorization(code);
+        //    svc.ClientSettings.UpdateAndSave(token);
+        //    Console.WriteLine("Done!");
+        //}
 
 
         [UsedImplicitly]

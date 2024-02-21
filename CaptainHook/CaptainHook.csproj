@@ -61,11 +61,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj">
       <Project>{bedc55a3-dc4d-4430-be15-deb3246dfe3f}</Project>
       <Name>UtilClasses.WebClient</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
       <Project>{3bba3150-e309-4a51-81f9-42b8f4f99a6b}</Project>
       <Name>UtilClasses</Name>
     </ProjectReference>

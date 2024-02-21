@@ -84,7 +84,7 @@ public static class DeckExtensions
             : uri.SubstringBefore(":").ToLower();
         return key switch
         {
-            "digikey.com" or "digikey.se" => new DigiKey.PriceFetcher(productId?? uri, partNumbers),
+           // "digikey.com" or "digikey.se" => new DigiKey.PriceFetcher(productId?? uri, partNumbers),
             "eur" => new CurrencyPriceFetcher(uri, d.ExchangeRates["EUR"]),
             "olimex.com" => new OlimexPriceFetcher(uri, d.ExchangeRates["EUR"]),
             "se.farnell.com" => new Farnell.PriceFetcher(uri, partNumbers),

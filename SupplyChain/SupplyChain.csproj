@@ -12,11 +12,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\Shared\Common.Dto\Common.Dto.csproj" />
-		<ProjectReference Include="..\..\Shared\Common.Interfaces\Common.Interfaces.csproj" />
-		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj" />
-		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
-		<ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+		<ProjectReference Include="..\..\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj" />
+		<ProjectReference Include="..\..\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj" />
+		<ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj" />
 		<ProjectReference Include="..\ScriptOMatic.Generate\ScriptOMatic.Generate.csproj" />
 
 		<ProjectReference Include="..\SourceFuLib\SourceFuLib.csproj" />

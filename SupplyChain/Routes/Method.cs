@@ -1,13 +1,12 @@
-﻿using Common.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Common.Dto;
 using UtilClasses;
 using UtilClasses.Extensions.Enumerables;
 using UtilClasses.Extensions.Reflections;
 using UtilClasses.Extensions.Strings;
+using UtilClasses.Dto;
 
 namespace SupplyChain.Routes
 {
@@ -58,16 +57,16 @@ namespace SupplyChain.Routes
             Route = route;
         }
 
-        public static Method FromVerbDescriptor(VerbDescriptor vd, string controllerName) => new Method(vd.Name,
-            vd.Returns,
-            vd.FromBody,
-            controllerName,
-            vd.Parameters.Select(p => new Parameter(Globals.FixForbidden(p.Name.MakeIt().CamelCase()), p.Type, Parameter.ParameterTypes.Query, p.Optional)),
-            new string[] { },
-            true,
-            vd.Verb,
-            vd.Route,
-            RouteTypes.MacsRoute);
+        //public static Method FromVerbDescriptor(VerbDescriptor vd, string controllerName) => new Method(vd.Name,
+        //    vd.Returns,
+        //    vd.FromBody,
+        //    controllerName,
+        //    vd.Parameters.Select(p => new Parameter(Globals.FixForbidden(p.Name.MakeIt().CamelCase()), p.Type, Parameter.ParameterTypes.Query, p.Optional)),
+        //    new string[] { },
+        //    true,
+        //    vd.Verb,
+        //    vd.Route,
+        //    RouteTypes.MacsRoute);
         public static Method FromMethodInfo(MethodInfo method, string controllerName, RouteTypes rt, string routePrefix)
         {
 

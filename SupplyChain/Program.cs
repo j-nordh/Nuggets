@@ -74,8 +74,8 @@ namespace SupplyChain
         }
 
 
-        [Verb(Aliases = "Routes")]
-        public void GenerateRecsRoutes() => new Routes.Generator(_env, _force).GenerateRoutes();
+        //[Verb(Aliases = "Routes")]
+        //public void GenerateRecsRoutes() => new Routes.Generator(_env, _force).GenerateRoutes();
         
         public void GenerateProcedures(string dbName = null)
         {
@@ -144,7 +144,7 @@ namespace SupplyChain
         public void GenerateAll(string dbName = null)
         {
             _env.Db.Name = dbName ?? _env.Db.Name;
-            GenerateRecsRoutes();
+            //GenerateRecsRoutes();
             //GenerateApiRoutes();
             //GenerateMonitorRoutes();
             GenerateProcedures();

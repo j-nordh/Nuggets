@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabParser", "VocabParser\VocabParser.csproj", "{A9B17815-DCF1-47BC-91FB-06911B0D374F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses", "..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj", "{3BBA3150-E309-4A51-81F9-42B8F4F99A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses", "..\UtilClasses\UtilClasses\UtilClasses.csproj", "{3BBA3150-E309-4A51-81F9-42B8F4F99A6B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrawSql", "DrawSql\DrawSql.csproj", "{6DAF227E-3E06-496E-B44E-7F9DE55AA8C5}"
 EndProject
@@ -13,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Interfaces", "..\Sha
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D96E285E-51B0-43C0-9B41-FB37510749BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Db", "..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj", "{5579D515-128C-4A7A-915A-12062B57F5C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Db", "..\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj", "{5579D515-128C-4A7A-915A-12062B57F5C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.Dto", "SupplyChain.Dto\SupplyChain.Dto.csproj", "{25A79CBC-2EF6-4843-8B97-C1F28FE30EDF}"
 EndProject
@@ -21,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain.Constants", "Su
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupplyChain", "SupplyChain\SupplyChain.csproj", "{3D8D25D6-F754-406E-A17A-E1A37B9BA380}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.CodeGen", "..\Shared\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj", "{187C77B9-5D6A-4D46-A52A-90AFC570FF49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.CodeGen", "..\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj", "{187C77B9-5D6A-4D46-A52A-90AFC570FF49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptOMatic", "ScriptOMatic\ScriptOMatic.csproj", "{46502A1B-FBE2-4667-8293-B35D548E6A15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilClasses.Winforms", "..\Shared\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj", "{F33180D9-8271-487F-B2EB-1FD8230A7529}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilClasses.Winforms", "..\UtilClasses\UtilClasses.Winforms\UtilClasses.Winforms.csproj", "{F33180D9-8271-487F-B2EB-1FD8230A7529}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScriptOMatic.Generate", "ScriptOMatic.Generate\ScriptOMatic.Generate.csproj", "{C8C8573D-906D-4214-87A4-0D13B091CE7F}"
 EndProject
@@ -41,19 +39,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLInjector", "SQLInjector\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{95036337-2690-4EAB-A0E8-BA845AC8605A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Tests", "..\Shared\UtilClasses\UtilClasses.Tests\UtilClasses.Tests.csproj", "{B4F0536B-5869-49D7-8DB0-E639E1FC0E8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Tests", "..\UtilClasses\UtilClasses.Tests\UtilClasses.Tests.csproj", "{B4F0536B-5869-49D7-8DB0-E639E1FC0E8B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.WebClient", "..\Shared\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj", "{BEDC55A3-DC4D-4430-BE15-DEB3246DFE3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.WebClient", "..\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj", "{BEDC55A3-DC4D-4430-BE15-DEB3246DFE3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptainHook", "CaptainHook\CaptainHook.csproj", "{0B525568-2EDA-45E0-89BD-3B66FEFDB7B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildRevisionFixer", "BuildRevisionFixer\BuildRevisionFixer.csproj", "{17959EA0-0F41-4741-B9B6-44592294B203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilClasses.Plugins", "..\Shared\UtilClasses\UtilClasses.Plugins\UtilClasses.Plugins.csproj", "{A0D80F31-70D7-4BCD-B4C2-F2D680B11018}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilClasses.Plugins", "..\UtilClasses\UtilClasses.Plugins\UtilClasses.Plugins.csproj", "{A0D80F31-70D7-4BCD-B4C2-F2D680B11018}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilClasses.Plugins.Load", "..\Shared\UtilClasses\UtilClasses.Plugin.Load\UtilClasses.Plugins.Load.csproj", "{312A8A49-2C35-4A0B-B6AA-9B840843C9BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilClasses.Plugins.Load", "..\UtilClasses\UtilClasses.Plugin.Load\UtilClasses.Plugins.Load.csproj", "{312A8A49-2C35-4A0B-B6AA-9B840843C9BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Dataflow", "..\Shared\UtilClasses\UtilClasses.Tpl\UtilClasses.Dataflow.csproj", "{F9AD6110-7E81-4324-B79F-41B55D384279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Dataflow", "..\UtilClasses\UtilClasses.Tpl\UtilClasses.Dataflow.csproj", "{F9AD6110-7E81-4324-B79F-41B55D384279}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipSolution", "ZipSolution\ZipSolution.csproj", "{1F2E4318-D7B9-4F4E-B07E-FC82F6072DDB}"
 EndProject
@@ -77,6 +75,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceFuLib", "SourceFuLib\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewQuestions", "InterviewQuestions\InterviewQuestions.csproj", "{B460B836-4EBD-4A13-8420-09E074B315B9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Interfaces", "..\Utilclasses\UtilClasses.Interfaces\UtilClasses.Interfaces.csproj", "{37E1B544-0B86-4325-8D53-9CA514161CD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilClasses.Dto", "..\Utilclasses\UtilClasses.Dto\UtilClasses.Dto.csproj", "{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,18 +89,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Debug|x64.Build.0 = Debug|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Debug|x86.Build.0 = Debug|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Release|x64.ActiveCfg = Release|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Release|x64.Build.0 = Release|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Release|x86.ActiveCfg = Release|Any CPU
-		{A9B17815-DCF1-47BC-91FB-06911B0D374F}.Release|x86.Build.0 = Release|Any CPU
 		{3BBA3150-E309-4A51-81F9-42B8F4F99A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BBA3150-E309-4A51-81F9-42B8F4F99A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBA3150-E309-4A51-81F9-42B8F4F99A6B}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -495,6 +485,30 @@ Global
 		{B460B836-4EBD-4A13-8420-09E074B315B9}.Release|x64.Build.0 = Release|Any CPU
 		{B460B836-4EBD-4A13-8420-09E074B315B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{B460B836-4EBD-4A13-8420-09E074B315B9}.Release|x86.Build.0 = Release|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Debug|x64.Build.0 = Debug|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Debug|x86.Build.0 = Debug|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Release|x64.ActiveCfg = Release|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Release|x64.Build.0 = Release|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Release|x86.ActiveCfg = Release|Any CPU
+		{37E1B544-0B86-4325-8D53-9CA514161CD2}.Release|x86.Build.0 = Release|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Debug|x64.Build.0 = Debug|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Debug|x86.Build.0 = Debug|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Release|x64.ActiveCfg = Release|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Release|x64.Build.0 = Release|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Release|x86.ActiveCfg = Release|Any CPU
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -512,6 +526,8 @@ Global
 		{F9AD6110-7E81-4324-B79F-41B55D384279} = {D96E285E-51B0-43C0-9B41-FB37510749BE}
 		{82F16AE9-74FD-4B43-99F7-F232EDC8768A} = {D96E285E-51B0-43C0-9B41-FB37510749BE}
 		{698FF1D6-2F24-4FB6-AE59-047F567D97BA} = {B76DB9EF-60FD-4550-AFDF-B5EB2E7512BF}
+		{37E1B544-0B86-4325-8D53-9CA514161CD2} = {D96E285E-51B0-43C0-9B41-FB37510749BE}
+		{6F7389D2-0437-4BD1-BE3C-FDFCE7B4D117} = {D96E285E-51B0-43C0-9B41-FB37510749BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {422D2236-486B-4FB4-8A07-B7971C868D93}

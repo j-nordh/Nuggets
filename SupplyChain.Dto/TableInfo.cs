@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
-using Common.Interfaces;
+﻿using UtilClasses.Interfaces;
 
 namespace SupplyChain.Dto
 {

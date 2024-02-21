@@ -304,15 +304,11 @@
     <None Include="Compare.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Common.Interfaces\Common.Interfaces.csproj">
-      <Project>{b0a29d20-587d-45ef-aafd-d3134c16d8bd}</Project>
-      <Name>Common.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.CodeGen\UtilClasses.CodeGen.csproj">
       <Project>{187c77b9-5d6a-4d46-a52a-90afc570ff49}</Project>
       <Name>UtilClasses.CodeGen</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.Db\UtilClasses.Db.csproj">
       <Project>{5579d515-128c-4a7a-915a-12062b57f5c3}</Project>
       <Name>UtilClasses.Db</Name>
     </ProjectReference>
@@ -320,7 +316,7 @@
       <Project>{f33180d9-8271-487f-b2eb-1fd8230a7529}</Project>
       <Name>UtilClasses.Winforms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
       <Project>{3bba3150-e309-4a51-81f9-42b8f4f99a6b}</Project>
       <Name>UtilClasses</Name>
     </ProjectReference>

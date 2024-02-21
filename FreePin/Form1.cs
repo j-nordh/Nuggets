@@ -40,7 +40,7 @@ namespace FreePin
             flpPredefined.Controls.Clear();
             flpPredefined.Controls.AddRange(_def.Functions
                 .Select(f => new CheckBox { Text = f.Name, Checked = true, Tag = f })
-                .ForEach(chk => chk.CheckedChanged += Refresh));
+                .ForEach(chk => chk.CheckedChanged += Refresh).Cast<Control>().ToArray());
             _pins = _def.Pins.Select(kvp => new DrawPin { Name = kvp.Key, Text = kvp.Value.Comment, Color = Color.Black }).ToDictionary(x=>x.Name);
             int y = 0;
             var c = 0;

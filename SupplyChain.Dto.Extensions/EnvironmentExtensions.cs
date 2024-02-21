@@ -1,4 +1,4 @@
-﻿using Common.Dto;
+﻿using UtilClasses.Dto;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,6 +9,7 @@ using UtilClasses;
 using UtilClasses.Extensions.Dictionaries;
 using UtilClasses.Extensions.Strings;
 using UtilClasses.Files;
+using UtilClasses.Interfaces;
 
 namespace SupplyChain.Dto.Extensions
 {
@@ -35,7 +36,10 @@ namespace SupplyChain.Dto.Extensions
 
             return new FileSaver(s.DbDefinition, OutputFormatting.Compactify(JsonConvert.SerializeObject(def, Formatting.Indented))).SaveIfChanged();
         }
-
+        public class VerbDescriptor : IHasName
+        {
+            public string Name { get; set; }
+        }
         public static Dictionary<string, List<VerbDescriptor>> GetVerbDescriptors(this RoutesSettings rs) =>
             JsonConvert.DeserializeObject<Dictionary<string, List<VerbDescriptor>>>(File.ReadAllText(rs.VerbDescriptorPath, Encoding.UTF8));
     }

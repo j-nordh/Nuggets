@@ -22,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Lib\Source\DigiKey\ApiClient\ApiClient.csproj" />
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj" />
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj" />
+    <!--<ProjectReference Include="..\..\Lib\Source\DigiKey\ApiClient\ApiClient.csproj" />-->
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses.WebClient\UtilClasses.WebClient.csproj" />
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj" />
   </ItemGroup>
 
   <ItemGroup>

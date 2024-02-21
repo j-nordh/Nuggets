@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Common.Dto;
+using UtilClasses.Dto;
 using UtilClasses;
 using UtilClasses.CodeGeneration;
 using UtilClasses.Extensions.Enumerables;
@@ -138,25 +138,25 @@ namespace SupplyChain.Routes
             return c.Methods.Any() ? c : null;
         }
 
-        public static Controller FromVerbDescriptors(KeyValuePair<string, List<VerbDescriptor>> kvp) =>
-            FromVerbDescriptors(kvp.Key, kvp.Value);
-        public static Controller FromVerbDescriptors(string route, List<VerbDescriptor> vds)
-        {
-            var controllerName = route.Trim('/');
-            var methods = vds.Select(vd => Method.FromVerbDescriptor(vd, controllerName)).ToList();
-            var types = methods.SelectMany(m => m.Types).NotNull().ToList();
-            var moreTypes = types
-                .Where(t => t.Contains("<"))
-                .Select(t => t.SubstringBefore("<")).ToList();
-            types.AddRange(moreTypes);
-            var requires = types
-                .Select(n => n.TrimEnd('?'))
-                .Where(Globals.Map.Contains)
-                .Select(n => Globals.Map.GetNamespace(n))
-                .ToList();
-            return new Controller(controllerName, requires, new List<Cache>(), Requirements.None, "",
-                RouteTypes.MacsRoute, methods);
-        }
+        //public static Controller FromVerbDescriptors(KeyValuePair<string, List<VerbDescriptor>> kvp) =>
+        //    FromVerbDescriptors(kvp.Key, kvp.Value);
+        //public static Controller FromVerbDescriptors(string route, List<VerbDescriptor> vds)
+        //{
+        //    var controllerName = route.Trim('/');
+        //    var methods = vds.Select(vd => Method.FromVerbDescriptor(vd, controllerName)).ToList();
+        //    var types = methods.SelectMany(m => m.Types).NotNull().ToList();
+        //    var moreTypes = types
+        //        .Where(t => t.Contains("<"))
+        //        .Select(t => t.SubstringBefore("<")).ToList();
+        //    types.AddRange(moreTypes);
+        //    var requires = types
+        //        .Select(n => n.TrimEnd('?'))
+        //        .Where(Globals.Map.Contains)
+        //        .Select(n => Globals.Map.GetNamespace(n))
+        //        .ToList();
+        //    return new Controller(controllerName, requires, new List<Cache>(), Requirements.None, "",
+        //        RouteTypes.MacsRoute, methods);
+        //}
 
 
         private class MethodSpec

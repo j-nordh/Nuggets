@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Stamper</RootNamespace>
     <AssemblyName>Stamper</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,7 +59,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
       <Project>{3bba3150-e309-4a51-81f9-42b8f4f99a6b}</Project>
       <Name>UtilClasses</Name>
     </ProjectReference>

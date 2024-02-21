@@ -54,7 +54,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\UtilClasses\UtilClasses\UtilClasses.csproj">
+    <ProjectReference Include="..\..\UtilClasses\UtilClasses\UtilClasses.csproj">
       <Project>{3bba3150-e309-4a51-81f9-42b8f4f99a6b}</Project>
       <Name>UtilClasses</Name>
     </ProjectReference>
